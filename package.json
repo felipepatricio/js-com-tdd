@@ -4,6 +4,8 @@
   "description": "Nossa biblioteca do curso de JS com TDD",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint src/*.js",
+    "prepush": "npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/felipepatricio/js-com-tdd/issues"
   },
-  "homepage": "https://github.com/felipepatricio/js-com-tdd#readme"
+  "homepage": "https://github.com/felipepatricio/js-com-tdd#readme",
+  "devDependencies": {
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "husky": "^0.14.3"
+  }
 }
