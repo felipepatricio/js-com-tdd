@@ -6,21 +6,20 @@ describe('Calc', () => {
     it('Should exists the calc lib', () => {
       expect(calc).to.exist;
     });
-    it('Should exists method `sum`', () => {
-      expect(calc.sum).to.exist;
-      expect(calc.sum).to.be.a('function');
+    it('Should returned 4 when `sum(2, 2)`', () => {
+      expect(calc.sum(2, 2)).to.be.equal(4);
     });
-    it('Should exists method `sub`', () => {
-      expect(calc.sub).to.exist;
-      expect(calc.sub).to.be.a('function');
+    it('Should returned 0 when `sub(2, 2)`', () => {
+      expect(calc.sub(2, 2)).to.be.equal(0);
     });
-    it('Should exists method `mult`', () => {
-      expect(calc.mult).to.exist;
-      expect(calc.mult).to.be.a('function');
+    it('Should returned 1 when `div(2, 2)`', () => {
+      expect(calc.div(2, 2)).to.be.equal(1);
     });
-    it('Should exists method `div`', () => {
-      expect(calc.div).to.exist;
-      expect(calc.div).to.be.a('function');
-    })
+    it('Should returned "Não é possível divisão por 0" when `div(2, 0)', () => {
+      expect(calc.div(2, 0)).to.be.equal("Não é possível divisão por 0");
+    });
+    it('Should returned 4 when `mult(2, 2)', () => {
+      expect(calc.mult(2, 2)).to.be.equal(4);
+    });
   });
 });
