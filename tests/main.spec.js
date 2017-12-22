@@ -13,8 +13,8 @@ describe('Calc', () => {
     it('Should returned 1 when `div(2, 2)`', () => {
       expect(div(2, 2)).to.be.equal(1);
     });
-    it('Should returned "Não é possível divisão por 0" when `div(2, 0)', () => {
-      expect(div(2, 0)).to.be.equal("Não é possível divisão por zero");
+    it('Should returned Não é possível divisão por 0" when `div(2, 0)', () => {
+      expect(div(2, 0)).to.be.equal('Não é possível divisão por zero');
     });
     it('Should returned 4 when `mult(2, 2)', () => {
       expect(mult(2, 2)).to.be.equal(4);
