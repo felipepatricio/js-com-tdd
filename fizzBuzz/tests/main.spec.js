@@ -26,8 +26,4 @@ describe('Main', () => {
   it('Should return number when non-multiple of 3 and 5', () => {
     expect(FizzBuzz(8)).to.be.equal(8);
   });
-
-  it('Should return 0 when number is 0', () => {
-    expect(FizzBuzz(0)).to.be.equal(0);
-  });
 });
